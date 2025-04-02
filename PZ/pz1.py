@@ -14,6 +14,8 @@ for item in converted_response:
     exchange_rates.append(item['rate'])
 print(exchange_dates)
 print(exchange_rates)
-import matplotlib.pyplot
-matplotlib.pyplot.plot(exchange_dates,exchange_rates)
-matplotlib.pyplot.show()
+import matplotlib.pyplot as plt
+plt.plot(exchange_dates,exchange_rates)
+plt.ylabel('Rates')
+plt.xlabel('Date')
+plt.show()
